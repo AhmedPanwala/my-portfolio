@@ -1,0 +1,146 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; max-width: 100vw; }
+img { max-width: 100%; height: auto; display: block; }
+section { position: relative; overflow: hidden; width: 100%; max-width: 100vw; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+@media (max-width: 768px) { .container { padding: 0 20px !important; } }
+@media (max-width: 480px) { .container { padding: 0 16px !important; } }
+
+/* NAVBAR */
+@media (max-width: 768px) {
+  .mobile-hamburger-btn { display: flex !important; }
+  .mobile-nav-logo { display: flex !important; }
+  .desktop-nav { display: none !important; }
+  .nav-brand-text { display: none !important; }
+}
+@media (min-width: 769px) {
+  .mobile-hamburger-btn { display: none !important; }
+  .mobile-nav-logo { display: none !important; }
+  .desktop-nav { display: flex !important; }
+}
+
+/* HERO */
+@media (max-width: 768px) {
+  #hero { padding-top: 80px !important; min-height: 100svh !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; }
+  #hero h1 { font-size: clamp(1.8rem, 8vw, 3rem) !important; line-height: 1.15 !important; }
+  #hero canvas { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; z-index: 0 !important; }
+  #hero > * { position: relative !important; z-index: 1 !important; }
+  #hero .hero-buttons { flex-direction: column !important; align-items: center !important; gap: 12px !important; }
+  #hero .hero-buttons button, #hero .hero-buttons a { width: 100% !important; max-width: 280px !important; justify-content: center !important; }
+}
+
+/* ABOUT */
+@media (max-width: 768px) {
+  #about { padding: 80px 20px 60px !important; }
+  #about .about-grid { flex-direction: column !important; align-items: center !important; gap: 32px !important; }
+  #about img { width: 150px !important; height: 150px !important; margin: 0 auto !important; }
+  #about .stat-cards { flex-wrap: wrap !important; gap: 12px !important; justify-content: center !important; }
+  #about p { font-size: clamp(0.85rem, 3vw, 1rem) !important; text-align: center !important; }
+}
+
+  /* ABOUT responsive rules added per request */
+  @media (max-width: 900px) {
+    .about-top-row {
+      flex-direction: column !important;
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .about-bio {
+      text-align: center !important;
+      min-width: unset !important;
+      width: 100% !important;
+    }
+    .about-bio h2 {
+      text-align: center !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #about {
+      padding: 80px 0 60px !important;
+    }
+    #about .about-top-row {
+      padding: 0 20px !important;
+      gap: 28px !important;
+    }
+    #about .about-stats {
+      padding: 0 20px !important;
+      gap: 12px !important;
+    }
+    #about .about-bio p {
+      font-size: clamp(0.85rem, 3vw, 1rem) !important;
+      line-height: 1.8 !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #about {
+      padding: 70px 0 50px !important;
+    }
+    #about .about-stats > div {
+      flex: 1 1 100px !important;
+      min-width: 100px !important;
+      padding: 16px 10px !important;
+    }
+  }
+
+
+/* SKILLS — ROOT CAUSE FIX */
+#skills { padding: 80px 20px 60px !important; }
+#skills * { position: relative !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; }
+#skills .skills-grid { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; gap: 12px !important; }
+#skills .skill-card { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 10px !important; padding: 20px 12px !important; text-align: center !important; min-height: 110px !important; overflow: hidden !important; }
+#skills svg { flex-shrink: 0 !important; width: 36px !important; height: 36px !important; }
+#skills .skill-name { font-size: 0.78rem !important; text-align: center !important; word-break: break-word !important; white-space: normal !important; }
+@media (max-width: 900px) { #skills .skills-grid { grid-template-columns: repeat(3, 1fr) !important; } }
+@media (max-width: 600px) { #skills .skills-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; } #skills .skill-card { padding: 14px 8px !important; min-height: 90px !important; } }
+
+/* PROJECTS */
+@media (max-width: 768px) {
+  #projects { padding: 80px 20px 60px !important; }
+  #projects .projects-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  #projects .card { padding: 20px 16px !important; }
+  #projects .badge { font-size: 0.68rem !important; padding: 3px 8px !important; }
+}
+
+/* EXPERIENCE */
+@media (max-width: 768px) {
+  #experience { padding: 80px 20px 60px !important; }
+  #experience .timeline { padding-left: 28px !important; border-left: 2px solid rgba(0,255,209,0.2) !important; }
+  #experience .timeline-entry { width: 100% !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+  #experience .tags { flex-wrap: wrap !important; gap: 6px !important; }
+  #experience .tag { font-size: 0.68rem !important; padding: 3px 8px !important; }
+}
+
+/* CONTACT */
+@media (max-width: 768px) {
+  #contact { padding: 80px 20px 60px !important; }
+  #contact .contact-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  #contact input, #contact textarea { width: 100% !important; }
+  #contact button[type="submit"] { width: 100% !important; }
+}
+
+/* HEADINGS */
+@media (max-width: 768px) {
+  h2 { font-size: clamp(1.6rem, 6vw, 2.4rem) !important; margin-bottom: 32px !important; }
+  h3 { font-size: clamp(1rem, 4vw, 1.4rem) !important; }
+  section { padding: 70px 0 60px !important; }
+}
+
+/* Explicit hero h1 centering on mobile */
+@media (max-width: 768px) {
+  #hero h1 {
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: 0 auto !important;
+  }
+
+  #hero h1 span,
+  #hero h1 div {
+    text-align: center !important;
+  }
+}
