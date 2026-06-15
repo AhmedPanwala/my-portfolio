@@ -85,6 +85,29 @@ section { position: relative; overflow: hidden; width: 100%; max-width: 100vw; }
     }
   }
 
+  /* EXPERIENCE mobile rules */
+  @media (max-width: 768px) {
+    #experience {
+      padding: 80px 0 60px !important;
+    }
+    #experience > div {
+      padding: 0 20px !important;
+    }
+    #experience h2 {
+      margin-bottom: 40px !important;
+      text-align: center !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #experience {
+      padding: 60px 0 50px !important;
+    }
+    #experience > div {
+      padding: 0 16px !important;
+    }
+  }
+
 
 /* SKILLS — ROOT CAUSE FIX */
 #skills { padding: 80px 20px 60px !important; }

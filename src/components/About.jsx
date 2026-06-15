@@ -115,6 +115,7 @@ export default function About() {
                                         <div className="caps">Experience</div>
                                         <div className="small muted">Years in development</div>
                                     </div>
+                                    <br />
                                     <div style={{ fontSize: '1.6rem', fontWeight: 700 }} ref={(el) => statsRef.current[0] = el}>1</div>
                                 </div>
                             </div>
@@ -125,7 +126,8 @@ export default function About() {
                                         <div className="caps">Projects</div>
                                         <div className="small muted">Delivered</div>
                                     </div>
-                                    <div style={{ fontSize: '1.6rem', fontWeight: 700 }} ref={(el) => statsRef.current[1] = el}>10  +</div>
+                                    
+                                    <div style={{ fontSize: '1.6rem', fontWeight: 700 }} ref={(el) => statsRef.current[1] = el}>10+</div>
                                 </div>
                             </div>
                         </div>

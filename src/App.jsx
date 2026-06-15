@@ -11,18 +11,14 @@ import './App.css'
 import './index.css'
 
 export default function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   // enable smooth scroll globally
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth'
   }, [])
 
-  // loading screen timeout (1s)
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1000)
-    return () => clearTimeout(t)
-  }, [])
+  // loading overlay disabled
 
   // no custom cursor
 
